@@ -1,24 +1,27 @@
+@font-face {
+    font-family: 'Manrope' sans-serif;
+    src: url(../font/Manrope-VariableFont_wght);
+}
 * {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #f6f8fc;
-    width: auto;
+    background-color: rgb(229, 240, 250);
+    font-family: 'Manrope' sans-serif;
 }
 
 .content {
     padding: 1rem;
     background-color: #fff;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
 }
 
 
-.content h1 {
-    margin: 0;
+h1 {
+    padding-left: 25px;
 }
 
 @media screen and (min-width: 992px){
