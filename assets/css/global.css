@@ -12,9 +12,55 @@ body {
     font-family: 'Manrope' sans-serif;
 }
 
+nav#navbarPoke a {
+    color: white;
+}
+#navFire{
+    background-color: rgb(211, 101, 11);
+}
+
+#navGround {
+    background-color: rgb(208, 163, 15);
+}
+
+#navFlying {
+    background-color: #7d61ca;
+}
+
+#navPoison {
+    background-color: #7e2b7e;
+}
+
+#navPsychic {
+    background-color: #bb355d;
+}
+
+#navDark {
+    background-color: #8a6349;
+}
+
+#navBug{
+    background-color: #8a9623;
+}
+
+#navGhost {
+    background-color: #4f3879;
+}
+
+#navSteel{
+    background-color: #767587;
+}
+
+#navDragon {
+    background-color: #6231e0;
+}
+
+.dropdown-item.linkType {
+    color: black
+}
+
 .content {
     padding: 1rem;
-    background-color: #fff;
     height: 95vh;
     width: 100vw;
 }

@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body id="bodyPoke">
   <!-- Beginning Navbar -->
   <nav class="navbar navbar-expand-lg p-3 mb-2 bg-danger text-white" id="navbarPoke">
     <div class="container-fluid">
@@ -47,90 +47,90 @@
               Pokemons Types
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-normal.html">
+              <li><a class="dropdown-item" href="pokemon-normal.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-square-fill normal" viewBox="0 0 16 16">
                   <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                 </svg> Normal</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="./pokemon-grass.html">
+              <li><a class="dropdown-item" href="./pokemon-grass.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-square-fill grass" viewBox="0 0 16 16">
                   <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                 </svg> Grass</a>
             </li>
-            <li><a class="dropdown-item text-black bg-white" href="pokemon-fire.html">
+            <li><a class="dropdown-item" href="pokemon-fire.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-square-fill fire" viewBox="0 0 16 16">
                 <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
               </svg> Fire</a>
             </li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-water.html">
+              <li><a class="dropdown-item" href="pokemon-water.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill water" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Water</a>
               </li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-electric.html">
+              <li><a class="dropdown-item" href="pokemon-electric.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill electric" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Electric</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-ice.html">
+              <li><a class="dropdown-item" href="pokemon-ice.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill ice" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Ice</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-ground.html">
+              <li><a class="dropdown-item" href="pokemon-ground.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill ground" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Ground</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-flying.html">
+              <li><a class="dropdown-item" href="pokemon-flying.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill flying" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Flying</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="#">
+              <li><a class="dropdown-item" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill poison" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Poison</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-fighting.html">
+              <li><a class="dropdown-item" href="pokemon-fighting.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="bi bi-square-fill fighting" viewBox="0 0 16 16">
                       <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                     </svg> Fighting</a></li>    
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-psychic.html">
+              <li><a class="dropdown-item" href="pokemon-psychic.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill psychic" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Psychic</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-dark.html">
+              <li><a class="dropdown-item" href="pokemon-dark.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill dark" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Dark</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-bug.html">
+              <li><a class="dropdown-item" href="pokemon-bug.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill bug" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Bug</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-ghost.html">
+              <li><a class="dropdown-item" href="pokemon-ghost.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill ghost" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Ghost</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-steel.html">
+              <li><a class="dropdown-item" href="pokemon-steel.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill steel" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Steel</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-dragon.html">
+              <li><a class="dropdown-item" href="pokemon-dragon.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill dragon" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
                   </svg> Dragon</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemon-fairy.html">
+              <li><a class="dropdown-item" href="pokemon-fairy.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-square-fill fairy" viewBox="0 0 16 16">
                     <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z" />
@@ -149,9 +149,9 @@
               </svg> Generations
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item text-black bg-white" href="pokemons-1st.html">1st Generation</a></li>
-              <li><a class="dropdown-item text-black bg-white" id="2stGeneration" href="pokemons-2st.html">2st Generation</a></li>
-              <li><a class="dropdown-item text-black bg-white" href="pokemons-3st.html">3st Generation</a></li>
+              <li><a class="dropdown-item" href="pokemons-1st.html">1st Generation</a></li>
+              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2st Generation</a></li>
+              <li><a class="dropdown-item" href="#">3st Generation</a></li>
             </ul>
           </li>
         </ul>

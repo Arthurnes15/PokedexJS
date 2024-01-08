@@ -1,8 +1,8 @@
-const pokemons2stGeneration = document.querySelector('#pokemonList2st');
+const pokemons2stGeneration = document.querySelector('#pokemonList1st');
 
-const maxRecords2stGeneration = 251;
+const maxRecords2stGeneration = 151;
 const limit2stGeneration = 12;
-let offset = 151;
+let offset = 0;
 
 pokeApi.getPokemons2stGenerations = (offset = 151, limit = 12) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
@@ -39,6 +39,7 @@ loadPokemonItens(offset, limit2stGeneration);
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit2stGeneration;    
+    debugger
     const qtdRecordNextPage = offset + limit2stGeneration;
 
     if (qtdRecordNextPage >= maxRecords2stGeneration) {

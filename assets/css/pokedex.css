@@ -38,6 +38,7 @@
 
 .normal {
     background-color: #a6a877;
+    color:#a6a877
 }
 
 .grass {
@@ -82,7 +83,7 @@
 
 .fighting {
     background-color: #bf3029;
-    color: #f7cf2e;
+    color: #bf3029;
 }
 
 .psychic {

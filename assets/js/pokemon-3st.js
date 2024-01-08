@@ -1,10 +1,10 @@
-const pokemons2stGeneration = document.querySelector('#pokemonList2st');
+const pokemons3stGeneration = document.querySelector('#pokemonList3st');
 
-const maxRecords2stGeneration = 251;
-const limit2stGeneration = 12;
-let offset = 151;
+const maxRecords3stGeneration = 386;
+const limit3stGeneration = 12;
+let offset = 251;
 
-pokeApi.getPokemons2stGenerations = (offset = 151, limit = 12) => {
+pokeApi.getPokemons3stGenerations = (offset = 251, limit = 12) => {
     const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
     return fetch(url)
         .then((response) => response.json())
@@ -16,9 +16,9 @@ pokeApi.getPokemons2stGenerations = (offset = 151, limit = 12) => {
 }
 
 function loadPokemonItens(offset, limit) {
-    pokeApi.getPokemons2stGenerations(offset, limit)
+    pokeApi.getPokemons3stGenerations(offset, limit)
     .then((pokemons = []) => {
-        const html2stGeneration = pokemons.map((pokemon) => `
+        const html3stGeneration = pokemons.map((pokemon) => `
         <li class="pokemon ${pokemon.type}">
                     <span class="number">#${pokemon.number}</span>
                     <span class="name">${pokemon.name}</span>
@@ -31,21 +31,21 @@ function loadPokemonItens(offset, limit) {
                     </div>
         </li>
         `).join('')
-        pokemons2stGeneration.innerHTML += html2stGeneration
+        pokemons3stGeneration.innerHTML += html3stGeneration
     })
 }
 
-loadPokemonItens(offset, limit2stGeneration);
+loadPokemonItens(offset, limit3stGeneration);
 
 loadMoreButton.addEventListener('click', () => {
-    offset += limit2stGeneration;    
-    const qtdRecordNextPage = offset + limit2stGeneration;
+    offset += limit3stGeneration;    
+    const qtdRecordNextPage = offset + limit3stGeneration;
 
-    if (qtdRecordNextPage >= maxRecords2stGeneration) {
-        const newLimit2st =  maxRecords2stGeneration - offset;
-        loadPokemonItens(offset, newLimit2st);
+    if (qtdRecordNextPage >= maxRecords3stGeneration) {
+        const newLimit3st =  maxRecords3stGeneration - offset;
+        loadPokemonItens(offset, newLimit3st);
         loadMoreButton.parentElement.removeChild(loadMoreButton);
     } else {
-        loadPokemonItens(offset, limit2stGeneration);
+        loadPokemonItens(offset, limit3stGeneration);
     }
 });
