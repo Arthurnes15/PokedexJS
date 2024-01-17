@@ -11,11 +11,10 @@ pokeApi.getPokemons()
                     <div class="detail">
                         <ol class="types">
                             ${pokemon.types.map(function(type) { 
-                                if (type === "psychic") {
-                                    return `
+                                return `
                                         <li class="type ${type}">${type}</li>
                                 `}
-                                }).join('')
+                                ).join('')
 
                             }
                         </ol>

@@ -39,7 +39,6 @@ loadPokemonItens(offset, limit2stGeneration);
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit2stGeneration;    
-    debugger
     const qtdRecordNextPage = offset + limit2stGeneration;
 
     if (qtdRecordNextPage >= maxRecords2stGeneration) {

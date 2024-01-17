@@ -1,3 +1,75 @@
+/* dialog {
+    width: 360px;
+    height: 500px;
+    border-radius: 0.5rem;
+    margin: auto;
+    padding: 20px;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(0.7rem);
+}
+
+.bgModal {
+    margin: -20px;
+    padding: 20px;
+}
+
+.text-white.titleModal {
+    text-transform: capitalize;
+    
+}
+
+.numberModal {
+    color: white;
+    text-align: right;
+}
+
+.listTypesModal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgModal {
+    width: 300px;
+    height: 300px;
+}
+
+.listTypesModal .typeModal {
+    color: #fff;
+    padding: 0.25rem .5rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    list-style: none;
+}
+
+.informationsModal {
+    background-color: #fff;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: -20px;
+    padding: 20px 20px;
+    margin-top: -40px;
+}
+
+.divHeight , .divWeight, .divAbilities{
+    display: flex;
+} 
+
+.divHeight p , .divWeight p {
+    padding-right: 100px;
+}
+
+.divAbilities p{
+    padding-right: 20px;
+} */
+
+.pokemonModal {
+    display: none;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -38,93 +110,76 @@
 
 .normal {
     background-color: #a6a877;
-    color:#a6a877
 }
 
 .grass {
-    background-color: #77c850;
-    color: #77c850;
+    background-color: #73a35c;
 }
 
 .fire {
     background-color: #ee7f30;
-    color: #ee7f30;
 }
 
 .water {
     background-color: #678fee;
-    color: #678fee;
 }
 
 .electric {
     background-color: #f7cf2e;
-    color: #f7cf2e;
 }
 
 .ice {
     background-color: #98d5d7;
-    color: #98d5d7;
 }
 
 .ground {
     background-color: #dfbf69;
-    color: #dfbf69;
 }
 
 .flying {
     background-color: #a98ff0;
-    color: #a98ff0;
 }
 
 .poison {
     background-color: #a040a0;
-    color: #a040a0;
 }
 
 .fighting {
     background-color: #bf3029;
-    color: #bf3029;
 }
 
 .psychic {
     background-color: #f65687;
-    color: #f65687;
 }
 
 .dark {
     background-color: #725847;
-    color: #725847;
 }
 
 .rock {
     background-color: #b8a137;
-    color: #b8a137;
 }
 
 .bug {
     background-color: #a8b720;
-    color: #a8b720;
 }
 
 .ghost {
     background-color: #6e5896;
-    color: #6e5896;
 }
 
 .steel {
     background-color: #b9b7cf;
-    color: #b9b7cf;
 }
 
 .dragon {
     background-color: #6f38f6;
-    color: #6f38f6;
 }
 
 .fairy {
     background-color: #f9aec7;
-    color: #f9aec7;
 }
+
 
 .pokemon .detail .types {
     padding: 0;

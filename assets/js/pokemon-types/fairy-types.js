@@ -10,10 +10,9 @@ pokeApi.getPokemons()
                     <div class="detail">
                         <ol class="types">
                             ${pokemon.types.map(function(type) { 
-                                if (type === "fairy") {
-                                    return `
-                                        <li class="type ${type}">${type}</li>
-                                `}
+                                return `
+                                    <li class="type ${type}">${type}</li>
+                                `
                                 }).join('')
 
                             }
