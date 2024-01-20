@@ -9,16 +9,16 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types
     pokemon.type = type
 
-    // const abilities = pokeDetail.abilities.map((typeAbility) => typeAbility.ability.name)
-    // const [ability] = abilities
-    // pokemon.abilities = abilities
-    // pokemon.ability = ability
+    const abilities = pokeDetail.abilities.map((typeAbility) => typeAbility.ability.name)
+    const [ability] = abilities
+    pokemon.abilities = abilities
+    pokemon.ability = ability
 
 
     pokemon.photo = pokeDetail.sprites.other["official-artwork"]
     .front_default
-    // pokemon.height = pokeDetail.height
-    // pokemon.weight = pokeDetail.weight
+    pokemon.height = pokeDetail.height
+    pokemon.weight = pokeDetail.weight
 
     return pokemon;
 }
