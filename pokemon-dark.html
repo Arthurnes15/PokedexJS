@@ -20,11 +20,11 @@
 
 </head>
 
-<body>
+<body  onload="return loading()">
   <!-- Beginning Navbar -->
   <nav class="navbar navbar-expand-lg p-3 mb-2" id="navDark">
     <div class="container-fluid">
-      <a class="navbar-brand">
+      <a class="navbar-brand text-white">
         Pokedex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house"
                 viewBox="0 0 16 16">
                 <path
@@ -41,7 +41,7 @@
               </svg> Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="img/pokeball-icon.png" alt="pokebola" width="30" height="30">
               Pokemons Types
             </a>
@@ -101,7 +101,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ol"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -112,8 +112,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="index.html">1st Generation</a></li>
-              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2st Generation</a></li>
-              <li><a class="dropdown-item" href="#">3st Generation</a></li>
+              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2nd Generation</a></li>
+              <li><a class="dropdown-item" href="#">3nd Generation</a></li>
             </ul>
           </li>
         </ul>
@@ -121,6 +121,19 @@
     </div>
   </nav>
   <!-- End NAVBAR -->
+
+  <!--Beginning Modal-->
+  <main id="modal">
+    <div id="modal-bg">
+
+    </div>  
+  </main>
+  <!--End Modal-->
+
+  <div class="box-load">
+    <div class="pre"></div>
+  </div>
+
   <section class="content">
     <ol id="pokemonList" class="pokemons">
       <!-- Pokemons -->

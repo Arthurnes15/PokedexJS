@@ -1,4 +1,6 @@
 const pokemons2stGeneration = document.querySelector('#pokemonList2st');
+const boxLoad = document.querySelector('.box-load');
+const content = document.querySelector('.content');
 
 const maxRecords2stGeneration = 251;
 const limit2stGeneration = 12;
@@ -49,3 +51,10 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit2stGeneration);
     }
 });
+
+function loading() {
+    setTimeout(() => {
+        boxLoad.style.display = "none";
+    }, 100);
+    content.style.display = "block";
+}

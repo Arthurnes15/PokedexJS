@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="loading()">
   <!-- Beginning Navbar -->
   <nav class="navbar navbar-expand-lg p-3 mb-2 bg-warning-subtle text-emphasis-warning">
     <div class="container-fluid">
@@ -112,8 +112,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="pokemons-1st.html">1st Generation</a></li>
-              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2st Generation</a></li>
-              <li><a class="dropdown-item" href="pokemons-3st.html">3st Generation</a></li>
+              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2nd Generation</a></li>
+              <li><a class="dropdown-item" href="pokemons-3st.html">3nd Generation</a></li>
             </ul>
           </li>
         </ul>
@@ -121,6 +121,19 @@
     </div>
   </nav>
   <!-- End NAVBAR -->
+
+  <!--Beginning Modal-->
+  <main id="modal">
+    <div id="modal-bg">
+
+    </div>  
+  </main>
+  <!--End Modal-->
+
+  <div class="box-load">
+    <div class="pre"></div>
+  </div>
+
   <section class="content">
     <ol id="pokemonList" class="pokemons">
       <!-- Pokemons -->

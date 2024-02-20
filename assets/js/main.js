@@ -1,6 +1,8 @@
 const pokemonList = document.getElementById('pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
 const modal = document.querySelector('#modal');
+const boxLoad = document.querySelector('.box-load');
+const content = document.querySelector('.content');
 
 
 const maxRecords = 1302;
@@ -62,12 +64,12 @@ function getPokemonIdModal(pokemon) {
 
             <img src="${pokemon.photo}" class="imgModal" alt="${pokemon.name}">
 
-            <main class="informationsModal">
+            <section class="informationsModal">
                 <div class="nav">
                     <p>About</p>
                 </div>
         
-                <section class="detailsPokemonsModal">
+                <div class="detailsPokemonsModal">
                     <div class="divHeight">
                         <p>Height</p>
                         <p><strong>${pokemon.height}</strong></p>
@@ -77,11 +79,11 @@ function getPokemonIdModal(pokemon) {
                         <p><strong>${pokemon.weight}</strong></p>
                     </div>
                     <div class="divAbilities">
-                        <p>Abilities</p>
-                        <p><strong> ${pokemon.abilities.map((ability) => `<p>${ability}</p>`).join('')}</strong></p>
+                        <p id="pAbilities">Abilities</p>
+                        <p><strong> ${pokemon.abilities.map((ability) => `<p id="ability">${ability}</p>`).join('')}</strong></p>
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
         </div>
     </section>`
     modal.innerHTML = newModal;
@@ -90,4 +92,11 @@ function getPokemonIdModal(pokemon) {
 
 function closeModal() {
     modal.style.display = "none"
+}
+
+function loading() {
+    setTimeout(() => {
+        boxLoad.style.display = "none";
+    }, 100);
+    content.style.display = "block";
 }

@@ -1,4 +1,28 @@
- main#modal {
+.box-load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre {
+    background-image: url(../../img/loading.png);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    animation: load 2s infinite linear;
+    
+}
+
+.content {
+    display: none;
+}
+
+main#modal {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -11,81 +35,88 @@
     bottom: 0;
     margin: auto;
     backdrop-filter: blur(8px);
-}
+ }
 
-section.bgModal {
+ section.bgModal {
     margin: auto;
     margin-top: 20px;
     width: 350px;
     border-radius: 10px;
  }
 
-div.divModal {
+ div.divModal {
     padding: 20px;
     width: 350px;
-    transition: all 1s;
-}
+    margin-top: 50px;
+    box-shadow: 0px 17px 20px #00000091;
+    border-radius: 10px;
+ }
 
-#iconClose{
-    cursor: pointer;
-}
+ #iconClose {
+     cursor: pointer;
+ }
 
-.titleAndClose{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+ .titleAndClose {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
 
  .text-white.titleModal {
-    text-transform: capitalize;
+     text-transform: capitalize;
  }
 
  .numberModal {
-    color: white;
-    text-align: right;
+     color: white;
+     text-align: right;
  }
 
  .listTypesModal {
-    display: flex;
-    justify-content: space-around;
+     display: flex;
+     justify-content: space-around;
  }
 
  .imgModal {
-    width: 300px;
-    height: 300px;
+     width: 300px;
+     height: 300px;
  }
- 
+
  .listTypesModal .typeModal {
      color: #fff;
      padding: 0.25rem .5rem;
-    font-size: 0.8rem;
-    border-radius: 1rem;
-    filter: brightness(1.1);
-    text-align: center;
-    list-style: none;
+     font-size: 0.8rem;
+     border-radius: 1rem;
+     filter: brightness(1.1);
+     text-align: center;
+     list-style: none;
  }
 
  .informationsModal {
-    background-color: #fff;
-    border-radius: 0.625em;
-    margin: -20px;
-    padding: 20px 20px;
-    margin-top: -40px;
+     background-color: #fff;
+     border-radius: 10px;
+     margin: -20px;
+     padding: 20px 20px;
+     margin-top: -40px;
+ }
+
+ section.detailsPokemonsModal {
+     margin: 0px 20px 0px 20px;
  }
 
  .divHeight,
  .divWeight,
  .divAbilities {
      display: flex;
+     justify-content: space-between;
+     align-items: center;
  }
 
- .divHeight p,
- .divWeight p {
-     padding-right: 100px;
+ p#pAbilities {
+    padding-right: 40px;
  }
 
- .divAbilities p {
-     padding-right: 20px;
+ p#ability{
+    padding-right: 15px;
  }
 
  .pokemonModal {
@@ -253,3 +284,7 @@ div.divModal {
          margin: 0 auto;
      }
  }
+
+ @keyframes load {
+    to{transform: rotate(360deg)}
+}

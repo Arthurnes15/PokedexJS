@@ -1,5 +1,6 @@
 const pokemons3stGeneration = document.querySelector('#pokemonList3st');
-
+const boxLoad = document.querySelector('.box-load');
+const content = document.querySelector('.content');
 const maxRecords3stGeneration = 386;
 const limit3stGeneration = 12;
 let offset = 251;
@@ -49,3 +50,10 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit3stGeneration);
     }
 });
+
+function loading() {
+    setTimeout(() => {
+        boxLoad.style.display = "none";
+    }, 100);
+    content.style.display = "block";
+}

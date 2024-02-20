@@ -20,11 +20,11 @@
 
 </head>
 
-<body>
+<body onload="return loading()">
   <!-- Beginning Navbar -->
-  <nav class="navbar navbar-expand-lg p-3 mb-2 bg-success text-white">
+  <nav class="navbar navbar-expand-lg p-3 mb-2 bg-success text-white" >
     <div class="container-fluid">
-      <a class="navbar-brand text-light">
+      <a class="navbar-brand text-white">
         Pokedex</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,62 +32,76 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-normal.html">Normal</a>
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+              </svg> Home</a>
           </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-grass.html">Grass</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/pokeball-icon.png" alt="pokebola" width="30" height="30">
+              Pokemons Types
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-normal.html">Normal</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-grass.html">Grass</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-fire.html">Fire</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-water.html">Water</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-electric.html">Electric</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-ice.html">Ice</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-ground.html">Ground</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-flying.html">Flying</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="#">Poison</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-fighting.html">Fighting</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-psychic.html">Psychic</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-dark.html">Dark</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-bug.html">Bug</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-ghost.html">Ghost</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-steel.html">Steel</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-dragon.html">Dragon</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-black bg-white" href="pokemon-fairy.html">Fairy</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-fire.html">Fire</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-water.html">Water</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-electric.html">Electric</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-ice.html">Ice</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-ground.html">Ground</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-flying.html">Flying</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="#">Poison</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-fighting.html">Fighting</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-psychic.html">Psychic</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-dark.html">Dark</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-bug.html">Bug</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-ghost.html">Ghost</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-steel.html">Steel</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-dragon.html">Dragon</a>
-          </li>
-          <li>
-            <a class="dropdown-item text-black bg-white" href="pokemon-fairy.html">Fairy</a>
-          </li>
-        </ul>
-      </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ol"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -97,9 +111,9 @@
               </svg> Generations
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">1st Generation</a></li>
-              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2st Generation</a></li>
-              <li><a class="dropdown-item" href="#">3st Generation</a></li>
+              <li><a class="dropdown-item" href="pokemons-1st.html">1st Generation</a></li>
+              <li><a class="dropdown-item" id="2stGeneration" href="pokemons-2st.html">2nd Generation</a></li>
+              <li><a class="dropdown-item" href="#">3nd Generation</a></li>
             </ul>
           </li>
         </ul>
@@ -107,7 +121,13 @@
     </div>
   </nav>
   <!-- End NAVBAR -->
-  <section class="content">
+
+  
+  <div class="box-load">
+    <div class="pre"></div>
+  </div>
+
+  <section class="content" id="content">
     <ol id="pokemonList" class="pokemons">
     </ol>
   </section>
