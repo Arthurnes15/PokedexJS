@@ -33,6 +33,8 @@ function loadPokemonItens(offset, limit) {
                     </div>
         </li>
         `).join('')
+        boxLoad.style.display = "none";
+        content.style.display = "block";
         pokemons2stGeneration.innerHTML += html2stGeneration
     })
 }
@@ -51,10 +53,3 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit2stGeneration);
     }
 });
-
-function loading() {
-    setTimeout(() => {
-        boxLoad.style.display = "none";
-    }, 2000);
-    content.style.display = "block";
-}

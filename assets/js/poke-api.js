@@ -39,3 +39,4 @@ pokeApi.getPokemons = (offset, limit = 1302) => {
         .then((pokemonDetails) => pokemonDetails)
         .catch((error) => console.error(error)) 
 }
+    

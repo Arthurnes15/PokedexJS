@@ -1,8 +1,9 @@
-const pokemonList = document.getElementById('pokemonList');
+const content = document.querySelector('.content');
+const pokemonList = document.querySelector('#pokemonList');
 const loadMoreButton = document.getElementById('loadMoreButton');
 const modal = document.querySelector('#modal');
 const boxLoad = document.querySelector('.box-load');
-const content = document.querySelector('.content');
+const inputSearch = document.querySelector('#input-search');
 
 
 const maxRecords = 1302;
@@ -24,7 +25,10 @@ function loadPokemonItens(offset, limit) {
                         <img src="${pokemon.photo}" alt="${pokemon.name}"> 
                     </div>
         </li>
-        `).join('')
+        `).join('');
+
+        boxLoad.style.display = "none";
+        content.style.display = "block";
         pokemonList.innerHTML += newHtml;
     })
 }
@@ -92,11 +96,4 @@ function getPokemonIdModal(pokemon) {
 
 function closeModal() {
     modal.style.display = "none"
-}
-
-function loading() {
-    setTimeout(() => {
-        boxLoad.style.display = "none";
-    }, 100);
-    content.style.display = "block";
 }

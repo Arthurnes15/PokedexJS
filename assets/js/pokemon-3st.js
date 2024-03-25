@@ -31,7 +31,9 @@ function loadPokemonItens(offset, limit) {
                         <img src="${pokemon.photo}" alt="${pokemon.name}"> 
                     </div>
         </li>
-        `).join('')
+        `).join('');
+        boxLoad.style.display = "none";
+        content.style.display = "block";
         pokemons3stGeneration.innerHTML += html3stGeneration
     })
 }
@@ -50,10 +52,3 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit3stGeneration);
     }
 });
-
-function loading() {
-    setTimeout(() => {
-        boxLoad.style.display = "none";
-    }, 100);
-    content.style.display = "block";
-}

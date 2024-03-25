@@ -24,8 +24,9 @@ pokeApi.getPokemons()
                     </div>
         </li>
         `}}
-        )
-        .join('')
+        ).join('');
+        boxLoad.style.display = "none";
+        content.style.display = "block";
         pokemonList.innerHTML += newHtml;
     })
 
@@ -77,11 +78,4 @@ function getPokemonIdModal(pokemon) {
 
 function closeModal() {
     modal.style.display = "none"
-}
-
-function loading() {
-    setTimeout(() => {
-        boxLoad.style.display = "none";
-    }, 2000);
-    content.style.display = "block";
 }

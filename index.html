@@ -16,22 +16,23 @@
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/pokedex.css">
   <!-- Icon Favicon -->
-  <link rel="shortcut icon" href="./img/pokeball-icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/pokedex-icon2.png" type="image/x-icon">
 
 </head>
 
-<body onload="loading()">
+<body>
   <!-- Beginning Navbar -->
   <nav class="navbar navbar-expand-lg p-3 mb-2 bg-danger text-white" id="navbarPoke">
     <div class="container-fluid">
       <a class="navbar-brand">
-        Pokedex</a>
+        Pokedex
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house"
@@ -118,10 +119,13 @@
             </ul>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="input-search" type="search" placeholder="Search a pokemon" aria-label="Search">
+          <button class="btn btn-danger search" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
-  
   <!-- End NAVBAR -->
 
   <!--Beginning Modal-->
@@ -149,7 +153,7 @@
           <path
             d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466" />
         </svg>
-        Load more</button>
+        Load more</button>  
     </div>
   </section>
   <!--JavaScript BOOTSTRAP-->

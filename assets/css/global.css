@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Manrope' sans-serif;
-    src: url(../font/Manrope-VariableFont_wght);
+    font-family: 'Outfit';
+    src: url(../../font/Outfit/Outfit-VariableFont_wght.ttf);
 }
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(229, 240, 250);
-    font-family: 'Manrope' sans-serif;
+    font-family: 'Outfit';
 }
 
 nav#navbarPoke a {
